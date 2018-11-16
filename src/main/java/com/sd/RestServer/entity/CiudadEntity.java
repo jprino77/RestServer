@@ -1,37 +1,31 @@
 package com.sd.RestServer.entity;
 
-import java.io.Serializable;
+import java.math.BigDecimal;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity(name="ciudad")
-public class CiudadEntity implements Serializable {
-
-
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+@Entity(name = "ciudad")
+public class CiudadEntity {
 
 	@Id
-	@Column(name="id_ciudad")
+	@Column(name = "id_ciudad")
 	private Integer idCiudad;
-	
-	@Column(name="nombre")
+
+	@Column(name = "nombre")
 	private String nombre;
 
-	@Column(name="codigo_pais")
+	@Column(name = "codigo_pais")
 	private String codigoPais;
 
-	@Column(name="latitud")
-	private Double latitud;
-	
-	@Column(name="longitud")
-	private Double longitud;
-	
-	@Column(name="cantidad_buscada")
+	@Column(name = "latitud", precision = 10, scale = 8)
+	private BigDecimal latitud;
+
+	@Column(name = "longitud", precision = 11, scale = 8)
+	private BigDecimal longitud;
+
+	@Column(name = "cantidad_buscada")
 	private Integer cantidadBuscada;
 
 	public Integer getIdCiudad() {
@@ -58,19 +52,19 @@ public class CiudadEntity implements Serializable {
 		this.codigoPais = codigoPais;
 	}
 
-	public Double getLatitud() {
+	public BigDecimal getLatitud() {
 		return latitud;
 	}
 
-	public void setLatitud(Double latitud) {
+	public void setLatitud(BigDecimal latitud) {
 		this.latitud = latitud;
 	}
 
-	public Double getLongitud() {
+	public BigDecimal getLongitud() {
 		return longitud;
 	}
 
-	public void setLongitud(Double longitud) {
+	public void setLongitud(BigDecimal longitud) {
 		this.longitud = longitud;
 	}
 
@@ -81,7 +75,5 @@ public class CiudadEntity implements Serializable {
 	public void setCantidadBuscada(Integer cantidadBuscada) {
 		this.cantidadBuscada = cantidadBuscada;
 	}
-	
-	
-	
+
 }
