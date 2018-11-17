@@ -1,4 +1,4 @@
-package com.sd.RestServer.controller;
+package com.webService.rest.controller;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.sd.RestServer.openWeatherMap.response.Clima;
-import com.sd.RestServer.service.PronosticoService;
+import com.webService.openWeatherMap.response.Clima;
+import com.webService.service.PronosticoService;
 
 @RestController
 @RequestMapping("/clima")

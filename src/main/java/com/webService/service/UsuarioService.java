@@ -1,6 +1,6 @@
-package com.sd.RestServer.service;
+package com.webService.service;
 
-import com.sd.RestServer.entity.UsuarioEntity;
+import com.webService.entity.UsuarioEntity;
 
 public interface UsuarioService {
 	

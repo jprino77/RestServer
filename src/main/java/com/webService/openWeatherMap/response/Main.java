@@ -1,4 +1,4 @@
-package com.sd.RestServer.openWeatherMap.response;
+package com.webService.openWeatherMap.response;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

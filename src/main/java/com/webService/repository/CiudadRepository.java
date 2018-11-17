@@ -1,4 +1,4 @@
-package com.sd.RestServer.repository;
+package com.webService.repository;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.sd.RestServer.entity.CiudadEntity;
+import com.webService.entity.CiudadEntity;
 
 @Repository
 public interface CiudadRepository extends CrudRepository<CiudadEntity, Integer>{

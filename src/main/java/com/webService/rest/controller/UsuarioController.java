@@ -1,4 +1,4 @@
-package com.sd.RestServer.controller;
+package com.webService.rest.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.sd.RestServer.entity.UsuarioEntity;
-import com.sd.RestServer.service.UsuarioService;
+import com.webService.entity.UsuarioEntity;
+import com.webService.service.UsuarioService;
 
 @RestController
 @RequestMapping("/usuario")

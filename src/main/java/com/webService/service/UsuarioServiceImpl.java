@@ -1,10 +1,10 @@
-package com.sd.RestServer.service;
+package com.webService.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.sd.RestServer.entity.UsuarioEntity;
-import com.sd.RestServer.repository.UsuarioRepository;
+import com.webService.entity.UsuarioEntity;
+import com.webService.repository.UsuarioRepository;
 
 @Service
 public class UsuarioServiceImpl implements UsuarioService {

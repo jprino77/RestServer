@@ -1,8 +1,8 @@
-package com.sd.RestServer.service;
+package com.webService.service;
 
 import java.util.List;
 
-import com.sd.RestServer.entity.CiudadEntity;
+import com.webService.entity.CiudadEntity;
 
 public interface CiudadService {
 

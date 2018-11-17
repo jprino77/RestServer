@@ -1,4 +1,4 @@
-package com.sd.RestServer.entity;
+package com.webService.entity;
 
 import java.math.BigDecimal;
 

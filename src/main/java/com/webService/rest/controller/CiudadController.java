@@ -1,9 +1,8 @@
-package com.sd.RestServer.controller;
+package com.webService.rest.controller;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.json.JSONException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,8 +12,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.sd.RestServer.entity.CiudadEntity;
-import com.sd.RestServer.service.CiudadService;
+import com.webService.entity.CiudadEntity;
+import com.webService.service.CiudadService;
 
 @RestController
 public class CiudadController {
@@ -25,7 +24,7 @@ public class CiudadController {
 	CiudadService ciudadService;
 
 	@PostMapping("/buscarCiudad")
-	public ResponseEntity<List<CiudadEntity>> buscarCiudad(@RequestBody String nombre) throws JSONException {
+	public ResponseEntity<List<CiudadEntity>> buscarCiudad(@RequestBody String nombre){
 
 		logger.info("buscarCiudad" + nombre);
 

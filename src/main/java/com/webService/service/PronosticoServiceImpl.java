@@ -1,4 +1,4 @@
-package com.sd.RestServer.service;
+package com.webService.service;
 
 import static java.util.stream.Collectors.collectingAndThen;
 import static java.util.stream.Collectors.toCollection;
@@ -18,10 +18,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.google.gson.Gson;
-import com.sd.RestServer.entity.CiudadEntity;
-import com.sd.RestServer.openWeatherMap.response.Clima;
-import com.sd.RestServer.openWeatherMap.response.ClimaExtendido;
-import com.sd.RestServer.repository.CiudadRepository;
+import com.webService.entity.CiudadEntity;
+import com.webService.openWeatherMap.response.Clima;
+import com.webService.openWeatherMap.response.ClimaExtendido;
+import com.webService.repository.CiudadRepository;
 
 @Service
 public class PronosticoServiceImpl implements PronosticoService {

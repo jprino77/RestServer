@@ -1,4 +1,4 @@
-package com.sd.RestServer.service;
+package com.webService.service;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.sd.RestServer.entity.CiudadEntity;
-import com.sd.RestServer.repository.CiudadRepository;
+import com.webService.entity.CiudadEntity;
+import com.webService.repository.CiudadRepository;
 
 @Service
 public class CiudadServiceImpl implements CiudadService {

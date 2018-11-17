@@ -1,4 +1,4 @@
-package com.sd.RestServer.entity;
+package com.webService.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
