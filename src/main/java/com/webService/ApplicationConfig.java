@@ -27,6 +27,10 @@ public class ApplicationConfig {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ApplicationConfig.class, args);
+		
+//		 Endpoint.publish("http://localhost:8888/ws/person", new WsSoapImpl());
+
 	}
+
 
 }
