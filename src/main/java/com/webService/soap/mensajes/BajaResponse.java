@@ -38,8 +38,8 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "", propOrder = {
     "respuesta"
 })
-@XmlRootElement(name = "AltaResponse", namespace = "http://www.webService.com/soap/mensajes")
-public class AltaResponse {
+@XmlRootElement(name = "BajaResponse", namespace = "http://www.webService.com/soap/mensajes")
+public class BajaResponse {
 
     @XmlElement(namespace = "http://www.webService.com/soap/mensajes", required = true)
     protected String respuesta;

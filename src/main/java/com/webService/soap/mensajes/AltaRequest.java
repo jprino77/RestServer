@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.7 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantaci�n de la referencia de enlace (JAXB) XML v2.2.8-b130911.1802 
 // Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2018.11.17 a las 05:28:57 PM ART 
+// Todas las modificaciones realizadas en este archivo se perder�n si se vuelve a compilar el esquema de origen. 
+// Generado el: 2018.11.17 a las 10:29:52 PM ART 
 //
 
 
@@ -44,15 +44,16 @@ import javax.xml.bind.annotation.XmlType;
     "clave",
     "ciudadId"
 })
-@XmlRootElement(name = "AltaRequest")
+@XmlRootElement(name = "AltaRequest", namespace = "http://www.webService.com/soap/mensajes")
 public class AltaRequest {
 
-    @XmlElement(required = true)
+    @XmlElement(namespace = "http://www.webService.com/soap/mensajes", required = true)
     protected String nombre;
-    @XmlElement(required = true)
+    @XmlElement(namespace = "http://www.webService.com/soap/mensajes", required = true)
     protected String usuario;
-    @XmlElement(required = true)
+    @XmlElement(namespace = "http://www.webService.com/soap/mensajes", required = true)
     protected String clave;
+    @XmlElement(namespace = "http://www.webService.com/soap/mensajes")
     protected int ciudadId;
 
     /**

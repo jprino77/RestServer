@@ -1,24 +1,109 @@
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.webService.com/soap/mensajes"
-targetNamespace="http://www.webService.com/soap/mensajes" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://www.webService.com/soap/mensajes"
+	targetNamespace="http://www.webService.com/soap/mensajes"
+	elementFormDefault="qualified">
 
-    <xs:element name="AltaRequest">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="nombre" type="xs:string"/>
-                <xs:element name="usuario" type="xs:string"/>
-                <xs:element name="clave" type="xs:string"/>
-                <xs:element name="ciudadId" type="xs:int"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
- 
-    <xs:element name="AltaResponse">
-        <xs:complexType>
-            <xs:sequence>
-                 <xs:element name="respuesta" type="xs:string"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
- 
-     
+	<xs:element name="AltaRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nombre" type="xs:string" />
+				<xs:element name="usuario" type="xs:string" />
+				<xs:element name="clave" type="xs:string" />
+				<xs:element name="ciudadId" type="xs:int" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+
+	<xs:element name="AltaResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="respuesta" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="BajaRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="idUsuario" type="xs:int" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="BajaResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="respuesta" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+
+	<xs:element name="CiudadesRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nombreCiudad" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="CiudadesResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ciudades">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ciudad" maxOccurs="unbounded"
+								minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element type=" xs:int" name="idCiudad" />
+										<xs:element type=" xs:string" name="nombre" />
+										<xs:element type="xs:decimal" name="latitud" />
+										<xs:element type="xs:decimal" name="longitud" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+
+	<xs:element name="ClimaExtendidoRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="idCiudad" type="xs:int" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+
+
+	<xs:element name="ClimaExtendidoResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="climas">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="clima" maxOccurs="unbounded"
+								minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element type="xs:string" name="icon" />
+										<xs:element type="xs:string" name="dtTxt" />
+										<xs:element type="xs:string" name="tempMin" />
+										<xs:element type="xs:string" name="tempMax" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
 </xs:schema>

@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="respuesta" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="nombreCiudad" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,36 +36,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "respuesta"
+    "nombreCiudad"
 })
-@XmlRootElement(name = "AltaResponse", namespace = "http://www.webService.com/soap/mensajes")
-public class AltaResponse {
+@XmlRootElement(name = "CiudadesRequest", namespace = "http://www.webService.com/soap/mensajes")
+public class CiudadesRequest {
 
     @XmlElement(namespace = "http://www.webService.com/soap/mensajes", required = true)
-    protected String respuesta;
+    protected String nombreCiudad;
 
     /**
-     * Obtiene el valor de la propiedad respuesta.
+     * Obtiene el valor de la propiedad nombreCiudad.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getRespuesta() {
-        return respuesta;
+    public String getNombreCiudad() {
+        return nombreCiudad;
     }
 
     /**
-     * Define el valor de la propiedad respuesta.
+     * Define el valor de la propiedad nombreCiudad.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setRespuesta(String value) {
-        this.respuesta = value;
+    public void setNombreCiudad(String value) {
+        this.nombreCiudad = value;
     }
 
 }
