@@ -56,8 +56,8 @@ public class ObjectFactory {
      * Create an instance of {@link ClimaExtendidoResponse.Climas }
      * 
      */
-    public ClimaExtendidoResponse.Climas createClimaExtendidoResponseClimas() {
-        return new ClimaExtendidoResponse.Climas();
+    public Climas createClimaExtendidoResponseClimas() {
+        return new Climas();
     }
 
     /**
@@ -120,8 +120,8 @@ public class ObjectFactory {
      * Create an instance of {@link ClimaExtendidoResponse.Climas.Clima }
      * 
      */
-    public ClimaExtendidoResponse.Climas.Clima createClimaExtendidoResponseClimasClima() {
-        return new ClimaExtendidoResponse.Climas.Clima();
+    public Clima createClimaExtendidoResponseClimasClima() {
+        return new Clima();
     }
 
     /**
