@@ -15,7 +15,7 @@ public interface CiudadRepository extends CrudRepository<CiudadEntity, Integer>{
 
 	List<CiudadEntity> findTop5ByOrderByCantidadBuscadaDesc();
 	
-	List<CiudadEntity> findByNombreContainingIgnoreCaseOrderByNombre(String nombre);
+	List<CiudadEntity> findTop30ByNombreContainingIgnoreCaseOrderByNombre(String nombre);
 	
 	@Modifying(clearAutomatically = true)
 	@Query("update ciudad c set c.cantidadBuscada = c.cantidadBuscada + 1 where c.id =:id")

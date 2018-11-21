@@ -49,7 +49,8 @@ public class Clima {
 
 	public String getDt_txt() {
 		//El api devuelve un String con formato timestamp solo me interesa la fecha
-		return dt_txt.substring(0,10);
+		
+		return dt_txt == null ? dt_txt: dt_txt.substring(0,10);
 	}
 	
 	public void setDt_txt(String dt_txt) {

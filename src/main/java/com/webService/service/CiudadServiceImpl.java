@@ -18,7 +18,7 @@ public class CiudadServiceImpl implements CiudadService {
 	@Override
 	@Transactional
 	public List<CiudadEntity> getCiudadContieneNombre(String nombre) {
-		return repo.findByNombreContainingIgnoreCaseOrderByNombre(nombre);
+		return repo.findTop30ByNombreContainingIgnoreCaseOrderByNombre(nombre);
 	}
 
 }
